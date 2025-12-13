@@ -40,6 +40,34 @@ def plot_correlation_heatmap(df, num_cols):
     plt.title(f"Biểu đồ tương quan của các biến cột Numerical (Ordinal)")
     plt.show()
     
+    
+def plot_line_grid(df, ordinal_cols, target = 'G3', n_cols = 3):
+    
+        
+    n_vars = len(ordinal_cols)
+    n_rows = math.ceil(n_vars / n_cols)
+    
+    fig, axes  = plt.subplots(n_rows, n_cols, figsize= (n_cols*5, n_rows*5))
+    
+    axes = axes.flatten()
+    
+    for i, col in enumerate(ordinal_cols):
+        sns.lineplot(x=col, y=target, data=df, ax=axes[i], 
+                     marker='o', color='red', linewidth=2.5)
+        
+        axes[i].set_title(f"Tác động của {col}", fontsize=12)
+        axes[i].set_xlabel(col, fontsize=10)
+        axes[i].set_ylabel("G3")
+        
+        axes[i].grid(True, linestyle='--', alpha=0.7)
+        
+    for j in range(i+1, len(axes)):
+        fig.delaxes(axes[j])
+    
+    plt.tight_layout()
+    plt.show()
+        
+    
 def plot_cat_grid(df, cat_cols, target = 'G3', n_cols = 3):
     """
     Vẽ grid các boxplot cho các biến categorical
@@ -144,7 +172,19 @@ def oversampling_train_data(X_train, y_train):
     
     return X_train_resampled, y_train_resampled
     
-    
+def confusion_matrix_plot(y_test, y_pred):
+    cm = confusion_matrix(y_test, y_pred)
+
+    # Vẽ Heatmap
+    plt.figure(figsize=(6, 5))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar=False, 
+                xticklabels=['Low Risk (0)', 'High Risk (1)'],
+                yticklabels=['Low Risk (0)', 'High Risk (1)'])
+
+    plt.xlabel('Predicted Label')
+    plt.ylabel('Actual Label')
+    plt.title('Confusion Matrix - Logistic Regression')
+    plt.show()
     
     
     
