@@ -1,0 +1,8 @@
+# Python version: 3.11.5
+pandas==2.1.1
+numpy==1.26.0
+matplotlib
+seaborn
+scikit-learn==1.8.0
+statsmodels
+scipy
