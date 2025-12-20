@@ -14,7 +14,7 @@ Dự án tập trung phân tích các tác động như việc tiêu thụ rư�
 - Bối cảnh: Dữ liệu được thu nhập qua khảo sát học sinh tham gia các khoá học Toán và tiếng Bồ Đào Nha tại 2 trường trung học.
 
 ## **Research questions list**
-- Extra support có giúp học sinh tăng điểm (G3) hay không, tăng bao nhiêu?
+- Liệu age ảnh hưởng đến điểm G3 khác nhau giữa nam và nữ không?
 
 - Dự đoán học sinh có nguy cơ rớt môn dựa trên các yếu tố hành vi  (romantic, goout, Dalc, Walc, health, freetime) và G1,G2
 
