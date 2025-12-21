@@ -28,9 +28,11 @@ Dự án tập trung phân tích các tác động như việc tiêu thụ rư�
 
 ## **Key findings summary**
 
-- **Hành vi tiêu thụ cồn:** Có mối tương quan dương mạnh giữa uống rượu ngày thường và cuối tuần. Những học sinh có chỉ số `total_alc` cao thường có xu hướng nghỉ học nhiều hơn (absences cao) và điểm số thấp hơn nhẹ.
-
-- **Ảnh hưởng của phụ huynh:** nền tảng gia đình (`Fedu`, `Medu`, `Fjob`, `Mjob`) có ảnh hưởng nhiều đến điểm số của học sinh
+- Học sinh nam ở độ tuổi 21–22 có điểm G3 giảm mạnh, trong khi nữ giới duy trì xu hướng ổn định hơn
+- Sau 18 tuổi, mối quan hệ studytime → điểm số gần như biến mất
+- Nam và Nữ không học hiệu quả theo cùng một cách: điểm số của Nam giới vượt trội Nữ giới ở mức học thấp (<5h), ở mức học cao (>10h) thì ngược lại
+- Việc có hay không được gia đình hỗ trợ học tập (famsup) không làm thay đổi đáng kể điểm số
+- Internet không có tác động đồng nhất – hiệu quả phụ thuộc vào goout và freetime
 
 ## **File structure explaination**
 
