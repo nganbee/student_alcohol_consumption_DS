@@ -40,8 +40,8 @@ student_alcohol_consumption_DS/
 ├── notebooks/
 │   ├── 01_data_collection.ipynb        # Mô tả, thu nhập dữ liệu
 │   ├── 02_data_exploration.ipynb       # Phân tích dữ liệu
-│   ├── 03_data_preprocessing.ipynb     # Tiền xử lý chung bộ dữ liệu (giải quyết missing value, outliers...)
-│   └── 04_questioning.ipynb            # Đặt các câu hỏi, phân tích và trả lời
+│   ├── 03_questioning.ipynb            # Đặt các câu hỏi, phân tích và trả lời
+│   └── 04_summary.ipynb                # Tổng kết
 ├── .gitignore
 └── README.md
 ```
@@ -69,11 +69,8 @@ jupyter notebook
 2. Phân tích dữ liệu
 - File: `notebooks/02_data_exploration.ipynb`
 - Cách chạy: Mở file chọn `Kernel` $\rightarrow$ `Restart & Run All`
-3. Tiền xử lý chung bộ dữ liệu
-- File `notebooks/03_data_preprocessing.ipynb`
-- Cách chạy: Mở file chọn `Kernel` $\rightarrow$ `Restart & Run All`
-4. Phân tích và trả lời câu hỏi
-- File `notebooks/04_questioning.ipynb`
+3. Phân tích và trả lời câu hỏi
+- File `notebooks/03_questioning.ipynb`
 - Cách chạy: Mở file chọn `Kernel` $\rightarrow$ `Restart & Run All`
 
 ## **Dependencies list**
